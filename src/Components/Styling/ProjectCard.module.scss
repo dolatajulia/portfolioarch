@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  position: relative;
+
+  :hover {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05) translate(2rem, 0);
+    color: rgb(235, 122, 235) !important;
+  }
+
+  p {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: rgb(148, 148, 148);
+    margin-right: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    color: white !important;
+  }
+}
