@@ -12,16 +12,14 @@ function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <BrowserRouter basename={"/portfolioarch"}>
         <Routes location={location} key={location.key}>
-          <Route exact path="/portfolioarch" element={<Homepage />} />
+          <Route exact path="/" element={<Homepage />} />
           <Route path="/childrenshouse" element={<ChildrensHouse />} />
           <Route path="/socialhousing" element={<SocialHousing />} />
           <Route path="/climbingcenter" element={<ClimbingCenter />} />
           <Route path="/coliving" element={<Coliving />} />
           <Route path="/rakospatak" element={<RakosPatak />} />
         </Routes>
-      </BrowserRouter>
     </div>
   );
 }
